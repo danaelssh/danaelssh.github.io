@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Servidores DanaelSSH</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom right, #0c0f24, #1c1f36);
+      color: #fff;
+      padding: 20px;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 26px;
+      margin-top: 10px;
+      color: #fff;
+    }
+
+    .plan-container {
+      max-width: 800px;
+      margin: 40px auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    @media(min-width: 600px) {
+      .plan-container {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .plan {
+      background-color: #ffffff10;
+      border: 1px solid #ffffff20;
+      border-radius: 16px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+      animation: fadeInUp 0.8s ease forwards;
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    .plan:hover {
+      transform: translateY(-5px);
+    }
+
+    .plan:nth-child(1) {
+      animation-delay: 0s;
+    }
+
+    .plan:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    .plan:nth-child(3) {
+      animation-delay: 0.4s;
+    }
+
+    .flag {
+      width: 50px;
+      height: auto;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+
+    .plan h2 {
+      font-size: 20px;
+      margin: 10px 0 5px;
+    }
+
+    .plan p {
+      font-weight: 500;
+      margin-bottom: 15px;
+      color: #ccc;
+    }
+
+    .select-button {
+      background-color: #00ffae;
+      color: #000;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .select-button:hover {
+      background-color: #00e39e;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 13px;
+      color: #888;
+      margin-top: 50px;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+<h1>Servidores Vmess   DanaelSSH</h1>
+
+<div class="plan-container">
+  <!-- Canadá -->
+  <div class="plan">
+    <img src="https://raw.githubusercontent.com/Urvps2025/Urvps2025.github.io/refs/heads/main/ca.png" class="flag" alt="Canadá">
+    <h2>Canadá</h2>
+    <p>Velocidad: 1000 Mbps</p>
+    <a href="#" onclick="redirigir(this, 'https://gen.danaelssh.space/ca.php')">
+      <button class="select-button">Seleccionar</button>
+    </a>
+  </div>
+
+  <!-- Brasil -->
+  <div class="plan">
+    <img src="https://raw.githubusercontent.com/Urvps2025/Urvps2025.github.io/refs/heads/main/br.png" class="flag" alt="Brasil">
+    <h2>Brasil</h2>
+    <p>Velocidad: 1000 Mbps</p>
+    <a href="#" onclick="redirigir(this, 'https://gen.danaelssh.space/')">
+      <button class="select-button">Seleccionar</button>
+    </a>
+  </div>
+
+  <!-- Brasil 2 -->
+  <div class="plan">
+    <img src="https://raw.githubusercontent.com/Urvps2025/Urvps2025.github.io/refs/heads/main/us.png" class="flag" alt="Brasil 2">
+    <h2>United States</h2>
+    <p>Velocidad: 2000 Mbps</p>
+    <a href="#" onclick="redirigir(this, 'https://gen.danaelssh.space/br2.php')">
+      <button class="select-button">Seleccionar</button>
+    </a>
+  </div>
+</div>
+
+<footer>
+  DanaelSSH 2024-2025©. Todos los derechos reservados.
+</footer>
+
+<script>
+  function redirigir(el, url) {
+    const btn = el.querySelector('button');
+    btn.textContent = 'Redirigiendo...';
+    btn.disabled = true;
+    setTimeout(() => {
+      window.location.href = url;
+    }, 500);
+  }
+</script>
+
+</body>
+</html>
